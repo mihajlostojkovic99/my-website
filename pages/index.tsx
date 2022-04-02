@@ -10,11 +10,20 @@ const Home: NextPage = () => {
         <title>Mishko</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="text-3xl font-bold underline">Hi world, my name is Mihajlo Stojkovic!</div>
-      <div>
-        <Link href={'about'}>
-          <a className="hover:underline">About</a>
-        </Link>
+      <div className="flex h-screen flex-col justify-center bg-[#F5F5F5]">
+        <div className="my-0 mx-auto max-w-5xl">
+          <div className="text-3xl font-medium">
+            HI, MY NAME IS <span className="text-[#0476D0]">MIHAJLO</span>
+          </div>
+          <div className="text-8xl font-bold">
+            I build <span className="text-[#800000]">websites</span> lol.
+          </div>
+          <div>
+            <Link href={'about'}>
+              <a className="hover:underline">About me</a>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
