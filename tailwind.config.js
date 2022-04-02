@@ -1,7 +1,7 @@
 module.exports = {
-	content: ["./pages/**/*.tsx", "./components/**/*.tsx", "./pages/*.tsx"],
-	theme: {
-		extend: {},
-	},
-	plugins: [],
+  content: ['./pages/**/*.tsx', './components/**/*.tsx', './pages/*.tsx'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };
