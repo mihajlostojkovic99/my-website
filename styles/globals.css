@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap');
+
 html,
 body {
-  
+  @apply bg-[#F5F5F5];
+  font-family: 'Poppins', sans-serif;
+}
+
+.fontInconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+.fontPlayfair {
+  font-family: 'Playfair Display', serif;
 }
 
 a {
   color: #0476D0;
   text-decoration: none;
+  @apply hover:cursor-pointer;
 }
