@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import Head from 'next/head';
 
 const Projects: NextPage = () => {

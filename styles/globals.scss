@@ -6,20 +6,10 @@
 
 html,
 body {
-  @apply bg-[#F5F5F5];
-  font-family: 'Poppins', sans-serif;
-}
-
-.fontInconsolata {
-  font-family: 'Inconsolata', monospace;
-}
-
-.fontPlayfair {
-  font-family: 'Playfair Display', serif;
+  @apply bg-offWhite font-sans antialiased;
+  // background-color: #e0e0e0;
 }
 
 a {
-  color: #0476D0;
-  text-decoration: none;
-  @apply hover:cursor-pointer;
+  @apply hover:cursor-pointer text-blue_grotto no-underline;
 }

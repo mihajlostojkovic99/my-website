@@ -1,4 +1,4 @@
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import { FC } from 'react';
 import Head from 'next/head';
 
