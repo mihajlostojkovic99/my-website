@@ -6,7 +6,7 @@ import { BlogCard } from '../components/BlogCard';
 type blogProps = {
   allPostsData: PostData[];
 };
-// flex flex-wrap justify-between gap-7
+
 const Blog: NextPage<blogProps> = ({ allPostsData }) => {
   return (
     <div className="mt-20">

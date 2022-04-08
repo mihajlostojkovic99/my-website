@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="flex h-24 w-full items-center">
-      <div className="mx-auto flex w-fit max-w-5xl gap-11">
+    <div className="mx-auto flex h-[10vh] w-fit items-center">
+      <div className="w-5xl mx-auto flex w-fit gap-11">
         <Link href={'about'} passHref>
           <div className="navButton">
             <a className="hover:underline">About</a>
