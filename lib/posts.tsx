@@ -30,3 +30,26 @@ export function getSortedPostsData() {
     return dateB.getTime() - dateA.getTime();
   });
 }
+
+export function getPostsIds() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  return fileNames.map((fileName) => {
+    return {
+      params: {
+        id: fileName.replace(/\.mdx$/, ''),
+      },
+    };
+  });
+}
+
+export function getPostData(id: string) {
+  const fullPath = path.join(postsDirectory, `${id}.mdx`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const matterResult = matter(fileContents);
+  const { content, data } = matter(fileContents);
+  return {
+    id,
+    ...(data as { title: string; date: string; summary: string }),
+    content,
+  };
+}

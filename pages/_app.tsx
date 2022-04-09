@@ -2,6 +2,7 @@
 import '../styles/globals.scss';
 import '../styles/navbar.scss';
 import '../styles/blog.scss';
+import '../styles/post.scss';
 import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';
 

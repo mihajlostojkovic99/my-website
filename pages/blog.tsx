@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import { getSortedPostsData, PostData } from '../lib/posts';
 import { GetStaticProps } from 'next';
 import { BlogCard } from '../components/BlogCard';
@@ -9,11 +10,19 @@ type blogProps = {
 
 const Blog: NextPage<blogProps> = ({ allPostsData }) => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 mb-7">
       <div className="mb-3 ml-1 text-xl font-light">{allPostsData.length} Posts</div>
       <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2">
         {allPostsData.map((postData: PostData) => {
-          return <BlogCard key={postData.id} title={postData.title} summary={postData.summary} date={postData.date} />;
+          return (
+            <BlogCard
+              key={postData.id}
+              id={postData.id}
+              title={postData.title}
+              summary={postData.summary}
+              date={postData.date}
+            />
+          );
         })}
       </div>
     </div>

@@ -1,0 +1,11 @@
+.postPage {
+    @apply text-lg;
+}
+
+.postPage > ul {
+    @apply list-disc ml-8;
+}
+
+.postPage > pre code {
+    @apply bg-black text-offWhite block w-full break-words my-4 p-1 rounded;
+}
