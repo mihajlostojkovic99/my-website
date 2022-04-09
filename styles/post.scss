@@ -6,6 +6,10 @@
     @apply list-disc ml-8;
 }
 
+.postPage code {
+    @apply bg-black text-offWhite px-1 py-px rounded;
+}
+
 .postPage > pre code {
-    @apply bg-black text-offWhite block w-full break-words my-4 p-1 rounded;
+    @apply block w-full break-words my-4 rounded;
 }

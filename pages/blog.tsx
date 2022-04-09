@@ -10,7 +10,12 @@ type blogProps = {
 
 const Blog: NextPage<blogProps> = ({ allPostsData }) => {
   return (
-    <div className="mt-20 mb-7">
+    <div className="mt-14 mb-7">
+      <div className="mb-6">
+        <Link href={'/'}>
+          <a className="font-medium">Back</a>
+        </Link>
+      </div>
       <div className="mb-3 ml-1 text-xl font-light">{allPostsData.length} Posts</div>
       <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2">
         {allPostsData.map((postData: PostData) => {

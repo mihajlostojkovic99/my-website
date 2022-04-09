@@ -30,7 +30,7 @@ export const LinkButton: FC<LinkButtonProps> = React.forwardRef(function LinkBut
   ref,
 ) {
   return (
-    <a href={href} ref={ref as LegacyRef<HTMLAnchorElement>}>
+    <a className="w-fit" href={href} ref={ref as LegacyRef<HTMLAnchorElement>}>
       <Button className={className}>{children}</Button>
     </a>
   );
