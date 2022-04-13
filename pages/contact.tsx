@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
   return (
     <div className="flex h-full flex-col">
       <div>
-        <form name="newsletter" method="POST" data-netlify="true">
+        <form name="newsletter" action="/" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="newsletter" />
           <div className="text-center text-lg font-medium">
             Subscribe to my newsletter or else! <sup className="text-xs">This is probably spam</sup>
