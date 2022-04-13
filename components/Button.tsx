@@ -15,14 +15,15 @@ type LinkButtonProps = {
 
 export const Button: FC<ButtonProps> = ({ className, type, children }) => {
   return (
-    <div
+    <button
       className={cx(
-        'w-fit cursor-pointer rounded-md border-2 border-blue_grotto bg-offWhite p-1 text-blue_grotto',
+        'block cursor-pointer rounded-md border-2 border-blue_grotto bg-offWhite p-1 text-blue_grotto',
         className,
       )}
+      type={type}
     >
-      <button type={type}>{children}</button>
-    </div>
+      {children}
+    </button>
   );
 };
 
