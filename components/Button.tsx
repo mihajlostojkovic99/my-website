@@ -5,6 +5,7 @@ import { Url } from 'url';
 
 type ButtonProps = {
   className?: string;
+  type?: 'submit' | 'reset' | 'button';
 };
 
 type LinkButtonProps = {
@@ -12,15 +13,15 @@ type LinkButtonProps = {
   href?: string;
 };
 
-export const Button: FC<ButtonProps> = ({ className, children }) => {
+export const Button: FC<ButtonProps> = ({ className, type, children }) => {
   return (
     <div
       className={cx(
-        'cursor-pointer rounded-md border-2 border-blue_grotto bg-offWhite p-1 text-blue_grotto',
+        'w-fit cursor-pointer rounded-md border-2 border-blue_grotto bg-offWhite p-1 text-blue_grotto',
         className,
       )}
     >
-      {children}
+      <button type={type}>{children}</button>
     </div>
   );
 };
