@@ -44,7 +44,7 @@ export default function Navbar() {
         <Link href={'/'} passHref>
           <div>
             <a className="nav-button">
-              <b aria-hidden="true" className="mr-4 md:hidden lg:mr-4 lg:inline">
+              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
                 01.
               </b>
               Home
@@ -54,7 +54,7 @@ export default function Navbar() {
         <Link href={'/projects'} passHref>
           <div>
             <a className="nav-button">
-              <b aria-hidden="true" className="mr-4 md:hidden lg:mr-4 lg:inline">
+              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
                 02.
               </b>
               Projects
@@ -64,7 +64,7 @@ export default function Navbar() {
         <Link href={'/blog'} passHref>
           <div>
             <a className="nav-button">
-              <b aria-hidden="true" className="mr-4 md:hidden lg:mr-4 lg:inline">
+              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
                 03.
               </b>
               Blog
@@ -74,7 +74,7 @@ export default function Navbar() {
         <Link href={'/about'} passHref>
           <div>
             <a className="nav-button">
-              <b aria-hidden="true" className="mr-4 md:hidden lg:mr-4 lg:inline">
+              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
                 04.
               </b>
               About

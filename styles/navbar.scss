@@ -1,6 +1,6 @@
 .nav-primary {
     @apply fixed inset-0 flex translate-x-full flex-col gap-16 bg-blurred_white pt-52 pl-20 text-4xl backdrop-blur-md transition-transform duration-500 ease-out;
-    @apply md:static md:translate-x-0 md:flex-row gap-10 bg-blurred_white md:pt-0 md:pl-0 text-xl;
+    @apply lg:static lg:translate-x-0 lg:flex-row lg:gap-10 lg:pt-0 lg:pl-0 text-xl;
 }
 
 .nav-primary[data-visibility="true"] {
@@ -9,11 +9,11 @@
 }
 
 .menu-button {
-    @apply fixed right-8 z-50 hidden w-10 md:hidden text-blue_grotto
+    @apply fixed right-8 z-50 hidden w-10 lg:hidden text-blue_grotto
 }
 
 .menu-button[data-visibility="true"] {
-    @apply block md:hidden;
+    @apply block lg:hidden;
 }
 
 .nav-button {
