@@ -1,0 +1,21 @@
+.nav-primary {
+    @apply fixed inset-0 flex translate-x-full flex-col gap-16 bg-blurred_white pt-52 pl-20 text-4xl backdrop-blur-md transition-transform duration-500 ease-out;
+    @apply md:static md:translate-x-0 md:flex-row gap-10 bg-blurred_white md:pt-0 md:pl-0 text-xl;
+}
+
+.nav-primary[data-visibility="true"] {
+    @apply translate-x-0;
+
+}
+
+.menu-button {
+    @apply fixed right-8 z-50 hidden w-10 md:hidden text-blue_grotto
+}
+
+.menu-button[data-visibility="true"] {
+    @apply block md:hidden;
+}
+
+.nav-button {
+    @apply relative after:absolute after:inset-x-0 after:-bottom-3 after:hidden md:after:block after:h-1 after:origin-left after:scale-x-0 after:bg-blue_grotto after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-x-100;
+}
