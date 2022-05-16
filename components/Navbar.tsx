@@ -42,44 +42,36 @@ export default function Navbar() {
 
       <div ref={refNav} data-visibility={false} className="nav-primary">
         <Link href={'/'} passHref>
-          <div>
-            <a className="nav-button">
-              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
-                01.
-              </b>
-              Home
-            </a>
-          </div>
+          <a className="nav-button">
+            <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
+              01.
+            </b>
+            Home
+          </a>
         </Link>
         <Link href={'/projects'} passHref>
-          <div>
-            <a className="nav-button">
-              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
-                02.
-              </b>
-              Projects
-            </a>
-          </div>
+          <a className="nav-button">
+            <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
+              02.
+            </b>
+            Projects
+          </a>
         </Link>
         <Link href={'/blog'} passHref>
-          <div>
-            <a className="nav-button">
-              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
-                03.
-              </b>
-              Blog
-            </a>
-          </div>
+          <a className="nav-button">
+            <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
+              03.
+            </b>
+            Blog
+          </a>
         </Link>
         <Link href={'/about'} passHref>
-          <div>
-            <a className="nav-button">
-              <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
-                04.
-              </b>
-              About
-            </a>
-          </div>
+          <a className="nav-button">
+            <b aria-hidden="true" className="mr-4  lg:mr-4 lg:inline">
+              04.
+            </b>
+            About
+          </a>
         </Link>
       </div>
     </div>
