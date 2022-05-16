@@ -1,13 +1,46 @@
 import type { NextPage } from 'next';
-import Navbar from '../components/Navbar';
-import Head from 'next/head';
+import Link from 'next/link';
+import { getSortedPostsData, PostData } from '../lib/posts';
+import { GetStaticProps } from 'next';
+import { BlogCard } from '../components/BlogCard';
 
-const Projects: NextPage = () => {
+type projectsProps = {
+  allPostsData: PostData[];
+};
+
+const Projects: NextPage<projectsProps> = ({ allPostsData }) => {
   return (
-    <div className="flex h-full flex-col">
-      <div className="flex h-full flex-col">This is my projects page!</div>
+    <div className="mt-14 mb-7">
+      <div className="mb-6">
+        <Link href={'/'}>
+          <a className="font-medium">Back</a>
+        </Link>
+      </div>
+      <div className="mb-3 ml-1 text-xl font-light">{allPostsData.length} Projects</div>
+      <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2">
+        {allPostsData.map((postData: PostData) => {
+          return (
+            <BlogCard
+              key={postData.id}
+              id={postData.id}
+              title={postData.title}
+              summary={postData.summary}
+              date={postData.date}
+            />
+          );
+        })}
+      </div>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 };
 
 export default Projects;

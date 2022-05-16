@@ -11,7 +11,7 @@ const Layout: FC = ({ children }) => {
       </Head>
       <div className="flex w-full flex-col justify-center">
         <Navbar></Navbar>
-        <main className="mx-3 min-h-[90vh] max-w-5xl md:mx-auto">{children}</main>
+        <main className="mx-3 min-h-[90vh] w-[90%] max-w-[1200px] md:mx-auto">{children}</main>
       </div>
     </div>
   );
